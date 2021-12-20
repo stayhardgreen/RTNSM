@@ -7,7 +7,7 @@ be created. Users who wish to begin development on their node.js app immediately
 without a need to perform basic site setup will find this tool useful.
 
 ## Required Dependencies
-- [MongoDB 3.4.10](https://www.mongodb.com/download-center#community)
+- [MongoDB 3.4.10 - 4.2](https://www.mongodb.com/download-center#community)
 - [NodeJS](https://nodejs.org/en/download/)
 
 ## Install
