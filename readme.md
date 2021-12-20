@@ -13,7 +13,8 @@ without a need to perform basic site setup will find this tool useful.
 ## Install
 1. Place Files in desired location on PC
 2. Run mongod.exe which can be found at the MongoDB install location
-3. Open CMD, and CD to Minimal Site project folder
+3. Ensure "data/db" folders exists on C drive
+3. Open CMD as Administrator, and CD to Minimal Site project folder
 4. Run: ```npm install```
 5. Turn the server on by running: ```node server.js```
 6. Navigate to [localhost:8080](http://localhost:8080/) in your web browser.
