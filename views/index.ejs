@@ -1,0 +1,20 @@
+<%- include('header'); %>
+<body>
+  <% if (session.username) { %>
+    <h3>Welcome</h3>
+    <p>
+      Thank you for logging in, <%= session.username %>. We are happy you are here. 
+    </p>
+    <h2>Online Users</h2>
+    <ul id="onlineUsersList"></ul>
+    <p>
+      <%= onlineUsersList.map((user) => {return (user.username)}) %>
+    </p>
+  <% }else{ %>
+    <h3>Introduction</h3>
+    <p>
+      A simple template site written in node.js.
+    </p>
+  <% } %>
+</body>
+<%- include('footer'); %>

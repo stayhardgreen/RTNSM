@@ -1,0 +1,22 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/public/styles.css">
+</head>
+<div id='header'>
+  <div id='container'>
+    <div id='header-logo-div'><a href='/'>Server Name</a></div>
+    <!--- If user is logged in--->
+    <% if (session.username) { %>
+      <div id='header-logo-div2'><a href='/sign-out'>Sign Out</a></div>
+    <% }else{ %>
+      <div id='header-logo-div2'>
+        <div id="login-div">
+          <form method="POST" action="/log-in">
+            <input name="username" placeholder="username" type="text"/>
+            <input name="password" placeholder="password" type="password"/>
+            <input value="Login" type="submit"> or <a href='/register'>Register</a>
+          </form>
+        </div>
+      </div>
+    <% } %>
+  </div>
+</div>

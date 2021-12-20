@@ -1,0 +1,16 @@
+<head>
+  <!--Include the Socket.io real time library -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../public/client-admin.js"></script>
+</head>
+
+<%- include('header'); %>
+
+<!--- Output List of users from Client.js !--> 
+<div>
+  <h3>Admin</h3>
+  <b>Registered Users</b><br/>
+  <ul id="usersList"></ul>
+</div>
+
+<%- include('footer'); %>

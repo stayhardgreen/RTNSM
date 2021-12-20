@@ -1,0 +1,18 @@
+<%- include('header'); %>
+
+<!--- If user is logged in--->
+<% if (session.username) { %>
+  <div>Welcome, <%= session.username %>. | <a href='/sign-out'>Sign Out</a></div>
+<% }else{ %>
+<div id="register-div">
+    <h3>Register</h3>
+    <form method="POST" action="/register">
+      <input placeholder="Username" name='username' type="text"/> </br>
+      <input placeholder="Password" name='pass1' type="password"/></br>
+      <input placeholder="Confirm Password" name="pass2" type="password"/></br>
+      <input value="Register" type="submit">
+    </form>
+  </div>
+<% } %>
+
+<%- include('footer'); %>
