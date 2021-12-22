@@ -2,6 +2,7 @@ const http = require('http');
 const express = require('express');
 const session = require('express-session');
 const io = require('socket.io');
+const socket = io();
 const mongodb = require('mongodb');
 const bodyParser = require('body-parser');
 const app = express();
@@ -11,6 +12,7 @@ const httpServer = http.createServer(app);
 const realtimeServer = io(httpServer);
 // Set the View Engine
 app.set('view engine', 'ejs');
+
 // Connect to Database
 var url = "mongodb://localhost:27017/rtns";
 mongodb.connect(url, function(err, client) {
